@@ -151,8 +151,8 @@ void AppMeli::commentDataReceived() {
 	qDebug() << data;
 
 }
-void AppMeli::addImage(QString val, QString price,QString seller) {
-	m_model->append(new ImageLoader(val, price, seller,this));
+void AppMeli::addImage(QString val, QString price,QString seller,QString permalink) {
+	m_model->append(new ImageLoader(val, price, seller,permalink,this));
 }
 
 QString AppMeli::getImage() {

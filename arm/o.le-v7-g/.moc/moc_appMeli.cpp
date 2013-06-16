@@ -37,11 +37,11 @@ static const uint qt_meta_data_AppMeli[] = {
       71,    8,   63,    8, 0x02,
       93,   84,    8,    8, 0x02,
      112,    8,    8,    8, 0x02,
-     142,  125,    8,    8, 0x02,
-     176,    8,   63,    8, 0x02,
+     152,  125,    8,    8, 0x02,
+     194,    8,   63,    8, 0x02,
 
  // properties: name, type, flags
-     212,  187, 0x00095409,
+     230,  205, 0x00095409,
 
        0        // eod
 };
@@ -50,8 +50,8 @@ static const char qt_meta_stringdata_AppMeli[] = {
     "AppMeli\0\0commentDataReceived()\0"
     "requestFinished(QNetworkReply*)\0QString\0"
     "currentDir()\0fileName\0pushImage(QString)\0"
-    "loadImages()\0val,price,seller\0"
-    "addImage(QString,QString,QString)\0"
+    "loadImages()\0val,price,seller,permalink\0"
+    "addImage(QString,QString,QString,QString)\0"
     "getImage()\0bb::cascades::DataModel*\0"
     "model\0"
 };
@@ -68,7 +68,7 @@ void AppMeli::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
         case 3: _t->pushImage((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 4: _t->loadImages(); break;
-        case 5: _t->addImage((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3]))); break;
+        case 5: _t->addImage((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3])),(*reinterpret_cast< QString(*)>(_a[4]))); break;
         case 6: { QString _r = _t->getImage();
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
         default: ;

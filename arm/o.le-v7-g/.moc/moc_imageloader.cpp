@@ -23,7 +23,7 @@ static const uint qt_meta_data_ImageLoader[] = {
        0,       // classname
        0,    0, // classinfo
        5,   14, // methods
-       5,   39, // properties
+       6,   39, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -43,11 +43,13 @@ static const uint qt_meta_data_ImageLoader[] = {
      135,  127, 0x0a495001,
      141,  127, 0x0a095001,
      147,  127, 0x0a095001,
-     159,  154, 0x01495001,
+     154,  127, 0x0a095001,
+     169,  164, 0x01495001,
 
  // properties: notify_signal_id
        0,
        1,
+       0,
        0,
        0,
        2,
@@ -60,7 +62,7 @@ static const char qt_meta_stringdata_ImageLoader[] = {
     "loadingChanged()\0onReplyFinished()\0"
     "image\0onImageProcessingFinished(QImage)\0"
     "QVariant\0QString\0label\0price\0seller\0"
-    "bool\0loading\0"
+    "permalink\0bool\0loading\0"
 };
 
 void ImageLoader::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -123,23 +125,24 @@ int ImageLoader::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 1: *reinterpret_cast< QString*>(_v) = label(); break;
         case 2: *reinterpret_cast< QString*>(_v) = price(); break;
         case 3: *reinterpret_cast< QString*>(_v) = seller(); break;
-        case 4: *reinterpret_cast< bool*>(_v) = loading(); break;
+        case 4: *reinterpret_cast< QString*>(_v) = permalink(); break;
+        case 5: *reinterpret_cast< bool*>(_v) = loading(); break;
         }
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::WriteProperty) {
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::ResetProperty) {
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyDesignable) {
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyScriptable) {
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyStored) {
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyEditable) {
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::QueryPropertyUser) {
-        _id -= 5;
+        _id -= 6;
     }
 #endif // QT_NO_PROPERTIES
     return _id;

@@ -34,6 +34,7 @@ class ImageLoader : public QObject
     Q_PROPERTY(QString label READ label NOTIFY labelChanged)
     Q_PROPERTY(QString price READ price)
     Q_PROPERTY(QString seller READ seller)
+    Q_PROPERTY(QString permalink READ permalink)
     Q_PROPERTY(bool loading READ loading NOTIFY loadingChanged)
 
 public:
@@ -42,7 +43,7 @@ public:
      *
      * @param imageUrl The url to load the image from.
      */
-    ImageLoader(const QString &imageUrl,const QString &price, const QString &seller, QObject* parent = 0);
+    ImageLoader(const QString &imageUrl,const QString &price, const QString &seller,const QString &permalink, QObject* parent = 0);
 
     /*
      * Destroys the image loader.
@@ -77,6 +78,7 @@ private:
     QString label() const;
     QString price() const;
     QString seller() const;
+    QString permalink() const;
     bool loading() const;
 
     // The property values
@@ -84,6 +86,7 @@ private:
     QString m_price;
     QString m_seller;
     QString m_label;
+    QString m_permalink;
     bool m_loading;
 
     // The URL of the image that should be loaded

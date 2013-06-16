@@ -36,7 +36,7 @@ public:
     Q_INVOKABLE void pushImage(QString fileName);
     // This method is called to start the loading of all images.
         Q_INVOKABLE void loadImages();
-        Q_INVOKABLE void addImage(QString val, QString price,QString seller);
+        Q_INVOKABLE void addImage(QString val, QString price,QString seller,QString permalink);
         Q_INVOKABLE QString getImage();
         bb::cascades::NavigationPane* mNav;
 private Q_SLOTS:

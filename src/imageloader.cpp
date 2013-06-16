@@ -35,9 +35,9 @@
  *  Constructor
  */
 //! [0]
-ImageLoader::ImageLoader(const QString &imageUrl, const QString &price,	const QString &seller, QObject* parent) :
-		QObject(parent), m_loading(false), m_imageUrl(imageUrl), m_price(price), m_seller(
-				seller) {
+ImageLoader::ImageLoader(const QString &imageUrl, const QString &price,	const QString &seller, const QString &permalink, QObject* parent) :
+		QObject(parent), m_loading(false), m_imageUrl(imageUrl), m_price(price), m_permalink(
+				permalink) {
 }
 //! [0]
 
@@ -180,6 +180,10 @@ QString ImageLoader::label() const {
 
 QString ImageLoader::price() const {
 	return m_price;
+}
+
+QString ImageLoader::permalink() const {
+	return m_permalink;
 }
 
 QString ImageLoader::seller() const {
